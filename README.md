@@ -1,6 +1,7 @@
 # Astrology free landing page
 
 ### Демо - [LIVE DEMO](https://tipdmr.github.io/Astro-html-template/)
+### Скачать Архив с шаблоном - [Build Zip](https://github.com/TIPDMR/Astro-html-template/archive/refs/heads/gh-pages.zip) 
 
 # Описание
 Astrology - адаптивный,кроссбраузерный  шаблон на тему астрологии для всех платформ. 
