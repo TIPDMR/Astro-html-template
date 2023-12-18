@@ -6,7 +6,7 @@
 Astrology - адаптивный,кроссбраузерный  шаблон на тему астрологии для всех платформ. 
 
 # Технологии
-[Gulp](https://gulpjs.com/), [Twig](https://github.com/twigjs/twig.js?tab=readme-ov-file/), [Scss](https://sass-scss.ru/), [Webpack](https://webpack.js.org/), [Babel](https://babeljs.io/), [AOS](https://michalsnik.github.io/aos/),[Swiper](https://swiperjs.com/)
+[Gulp](https://gulpjs.com/) [Twig](https://github.com/twigjs/twig.js?tab=readme-ov-file/) [Scss](https://sass-scss.ru/) [Webpack](https://webpack.js.org/) [Babel](https://babeljs.io/) [AOS](https://michalsnik.github.io/aos/) [Swiper](https://swiperjs.com/)
 
 # Запуск проекта
 ### 1. Клонируйте Репозиторий
