@@ -1,0 +1,10 @@
+.text {
+  @include text-main-styles;
+}
+@media screen and (max-width: 768px) {
+  .text {
+    &__text {
+      font-size: $smallFontSize;
+    }
+  }
+}

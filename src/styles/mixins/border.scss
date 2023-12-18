@@ -1,0 +1,28 @@
+@mixin border-top-left {
+  box-sizing: border-box;
+  border-left: 2px solid $goldColor;
+  border-top: 2px solid $goldColor;
+}
+
+@mixin border-bottom-right {
+  box-sizing: border-box;
+  border-right: 2px solid $goldColor;
+  border-bottom: 2px solid $goldColor;
+}
+
+@mixin border-top-left-right {
+  box-sizing: border-box;
+  border-left: 2px solid $goldColor;
+  border-top: 2px solid $goldColor;
+  border-right: 2px solid $goldColor;
+}
+
+@mixin border-all {
+  box-sizing: border-box;
+  border: 2px solid $goldColor;
+}
+
+@mixin min-max-width {
+  max-width: $maxWidth;
+  min-width: $minWidth;
+}

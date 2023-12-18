@@ -1,0 +1,34 @@
+@import "../vendor/normalize/normalize";
+@import "fonts";
+@import "vars";
+@import "mixins/mixins";
+
+@import "blocks/heading/heading";
+@import "blocks/text/text";
+@import "blocks/link/link";
+@import "blocks/border/border";
+@import "blocks/icons/icons";
+@import "blocks/button/button";
+@import "blocks/checkbox/checkbox";
+@import "blocks/button-link/button-link";
+
+@import "blocks/body/body";
+@import "blocks/app/app";
+@import "blocks/header/header";
+@import "blocks/footer/footer";
+@import "blocks/main/main";
+@import "blocks/menu-social/menu-social";
+@import "blocks/menu-header/menu-header";
+@import "blocks/menu-footer/menu-footer";
+@import "blocks/box/box";
+
+@import "blocks/slider/slider";
+@import "blocks/title/title";
+@import "blocks/promo/promo";
+@import "blocks/about/about";
+@import "blocks/numbers/numbers";
+@import "blocks/courses/courses";
+@import "blocks/consultations/consultations";
+@import "blocks/feedbacks/feedbacks";
+@import "blocks/contacts/contacts";
+

@@ -1,0 +1,148 @@
+.consultations {
+  @include default-font-styles;
+  margin-top: 100px;
+  width: 100%;
+
+  &__title {
+    text-align: center;
+    padding: 22px 0 0;
+    margin: 0 0 60px 0;
+  }
+
+  &__container {
+    @include flex-container(row, center, stretch);
+    //@include border-top-left;
+    //flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__header {
+    max-width: 267px;
+    width: 100%;
+    row-gap: 40px;
+    @include flex-container(column, flex-start, flex-start);
+  }
+
+  &__post {
+    @include flex-container(column, flex-start, flex-start);
+    box-sizing: border-box;
+    width: 100%;
+    border: solid $goldColor;
+
+    &:first-child {
+      border-width: 2px 1px 2px 2px;
+    }
+
+    &:not(:first-child):not(:last-child) {
+      border-width: 2px 1px 2px 1px;
+    }
+
+    &:last-child {
+      border-width: 2px 2px 2px 1px;
+    }
+  }
+
+  &__post-title {
+    line-height: 120%;
+  }
+
+  &__image {
+    height: 74px;
+  }
+
+  &__post-description {
+    margin: 20px 0 0;
+    text-transform: uppercase;
+    line-height: 22.4px;
+    max-width: 267px;
+    width: 100%;
+  }
+
+  &__link {
+    margin-top: 60px;
+  }
+}
+
+
+@media only screen and (max-width: 1280px) {
+  .consultations {
+    margin-top: 80px;
+
+    &__header {
+      row-gap: 30px;
+      justify-content: start;
+    }
+
+    &__title {
+      margin: 0 0 40px 0;
+    }
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__post-description {
+      margin-top: 0;
+    }
+
+    &__post {
+      //padding: 20px 40px 40px;
+      @include flex-container(row, space-between, center);
+      column-gap: 20px;
+
+      &:first-child {
+        border-width: 2px 2px 1px 2px;
+      }
+
+      &:not(:first-child):not(:last-child) {
+        border-width: 1px 2px 1px 2px;
+      }
+
+      &:last-child {
+        border-width: 1px 2px 2px 2px;
+      }
+    }
+
+    &__link {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .consultations {
+    margin-top: 60px;
+
+    &__title {
+      margin: 0 0 30px 0;
+    }
+
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    &__post {
+      @include flex-container(column, flex-start, flex-start);
+      flex-grow: 1;
+      //padding: 20px 30px 30px;
+      width: 100%;
+    }
+
+    &__post-description {
+      margin-top: 20px;
+      max-width: 100%;
+    }
+
+    &__header {
+      max-width: 100%;
+      row-gap: 30px;
+    }
+
+    &__link {
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<section id="contacts" class="contacts">
+    <h2 class="contacts__title heading heading_level-2 border border_top" data-aos="fade-in">Contacts</h2>
+    <div class="contacts__container box">
+        <div class="contacts__form-container" data-aos="zoom-in" data-aos-delay="200">
+            <form class="contacts__form" action="#">
+                <fieldset class="contacts__fieldset">
+                    <label class="contacts__label">
+                        <input class="contacts__input" type="text" placeholder="YOUR NAME"/>
+                    </label>
+                    <label class="contacts__label">
+                        <input class="contacts__input" type="text" placeholder="PHONE NUMBER"/>
+                    </label>
+                </fieldset>
+                <fieldset class="contacts__fieldset contacts__fieldset_check-box">
+                    <div class="check-box">
+                        <input type="checkbox" class="check-box__input" id="terms" checked/>
+                        <label for="terms" class="check-box__label">
+                            I agree with terms of privacy policy
+                        </label>
+                    </div>
+                </fieldset>
+                {% include "../components/button.twig" with {'text': 'SEND','className': 'contacts__button-form'} %}
+            </form>
+        </div>
+        <div class="contacts__info-container" data-aos-delay="200" data-aos="zoom-in">
+            <p class="text">They shake us out of our feelings of complacency so that we can move from one level of maturity to another, to a higher plane, and they work very rapidly </p>
+            <div class="contacts__list">
+                <p class="heading heading_level-3">MAIL@SARAFOX.COM</p>
+                <p class="heading heading_level-3">+3 088 222 99 99</p>
+            </div>
+            {% include './menu-social.twig' with {horizontal:"menu-social__horizontal"} %}
+        </div>
+    </div>
+</section>

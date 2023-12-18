@@ -1,0 +1,43 @@
+.border {
+  position: relative;
+
+  &_top {
+    &::after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-top: 2px solid transparent;
+      border-image: linear-gradient(0.25turn, rgba(2,0,36,0) 0%, rgba(215,190,138,1) 30%, rgba(215,190,138,1) 70%, rgba(2,0,36,0) 100%);
+      border-image-slice: 1;
+    }
+  }
+
+  &_bottom {
+    &::after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-top: 2px solid transparent;
+      border-image: linear-gradient(0.25turn, rgba(2,0,36,0) 0%, rgba(215,190,138,1) 35%, rgba(215,190,138,1) 65%, rgba(2,0,36,0) 100%);
+      border-image-slice: 1;
+    }
+  }
+
+  &_all {
+    &::after {
+      box-sizing: content-box;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 2px solid $goldColor;
+      z-index: -1;
+    }
+  }
+}

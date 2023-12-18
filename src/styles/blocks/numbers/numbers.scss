@@ -1,0 +1,96 @@
+.numbers {
+  @include default-font-styles;
+  position: relative;
+  margin-top: 100px;
+
+  &__title {
+    text-align: center;
+    padding: 22px 0 0;
+    margin: 0 0 60px 0;
+  }
+
+  &__container {
+    @include flex-container(row, space-between);
+    flex: 0 0 50%;
+    flex-flow: wrap;
+  }
+
+  &__post {
+    @include flex-container;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+    border: 2px solid $goldColor;
+    max-width: 50%;
+    width: 100%;
+
+    &:nth-child(1) {
+      border-width: 2px 1px 1px 2px;
+    }
+
+    &:nth-child(2) {
+      border-width: 2px 2px 1px 1px;
+    }
+
+    &:nth-child(3) {
+      border-width: 1px 1px 2px 2px;
+    }
+
+    &:nth-child(4) {
+      border-width: 1px 2px 2px 1px;
+    }
+  }
+
+  &__post-title {
+    @include flex-container;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 15px;
+  }
+
+  &__texts {
+    max-width: 470px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .numbers {
+    margin-top: 80px;
+
+    &__title {
+      margin: 0 0 40px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .numbers {
+    margin-top: 60px;
+
+    &__title {
+      margin: 0 0 30px 0;
+    }
+
+    &__post {
+      max-width: 100%;
+
+      &:nth-child(1) {
+        border-width: 2px 2px 1px 2px;
+      }
+
+      &:nth-child(2) {
+        border-width: 1px 2px 1px 2px;
+      }
+
+      &:nth-child(3) {
+        border-width: 1px 1px 2px 2px;
+      }
+
+      &:nth-child(4) {
+        border-width: 1px 2px 2px 2px;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,26 @@
+.icons {
+  display: block;
+  background-position: center;
+
+  z-index: -1;
+  position: relative;
+
+  &_arrow-link {
+    background-image: url("../images/ui/arrow-link.svg");
+    color: $goldColor;
+    width: 18px;
+    height: 18px;
+  }
+
+  &_menu-mobile {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/ui/icon-menu-button.svg);
+  }
+
+  &_arrow-nav {
+    width: 22px;
+    height: 17px;
+    background-image: url("../images/ui/arrow-nav.svg");
+  }
+}

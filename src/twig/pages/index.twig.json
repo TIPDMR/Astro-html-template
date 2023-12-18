@@ -1,0 +1,44 @@
+{
+  "title": "Astrology landing",
+  "description": "Astrology free template landing",
+  "menu": [
+    {
+      "name": "About",
+      "link": "#about"
+    },
+    {
+      "name": "Numbers",
+      "link": "#numbers"
+    },
+    {
+      "name": "Courses",
+      "link": "#courses"
+    },
+    {
+      "name": "Consultations",
+      "link": "#consultations"
+    },
+    {
+      "name": "Feedbacks",
+      "link": "#feedbacks"
+    },
+    {
+      "name": "Contacts",
+      "link": "#contacts"
+    }
+  ],
+  "menuSocial": [
+    {
+      "name": "Instagram",
+      "link": "#"
+    },
+    {
+      "name": "Facebook",
+      "link": "#"
+    },
+    {
+      "name": "Myspace",
+      "link": "#"
+    }
+  ]
+}

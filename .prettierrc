@@ -1,0 +1,11 @@
+{
+  "useTabs": false,
+  "printWidth": 1780,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "jsxBracketSameLine": false,
+  "parser": "flow",
+  "semi": true,
+  "wrapAttributes": "force-aligned",
+  "arrowParens": "avoid"
+}

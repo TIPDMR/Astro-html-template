@@ -1,0 +1,72 @@
+.heading {
+  @include heading-main-styles;
+  position: relative;
+
+  &__span {
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 62.575px;
+    letter-spacing: -2.04px;
+  }
+
+  &_level-1 {
+    @include h1-styles;
+  }
+
+  &_level-2 {
+    @include h2-styles;
+  }
+
+  &_level-3 {
+    @include h3-styles
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .heading {
+    &_level-1 {
+      font-size: 11vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .heading {
+    &_level-1 {
+      font-size: 13vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .heading {
+    &__span {
+      font-size: 50px;
+    }
+
+    &_level-2 {
+      font-size: 60px;
+    }
+
+    &_level-3 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    &__span {
+      font-size: 52px;
+    }
+
+    &_level-2 {
+      font-size: 38px;
+    }
+
+    &_level-3 {
+      font-size: 18px;
+    }
+  }
+}

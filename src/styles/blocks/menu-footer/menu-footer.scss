@@ -1,0 +1,13 @@
+.menu-footer {
+  @include text-main-styles;
+
+  &__list {
+    @include reset-list;
+    @include flex-container(column);
+    row-gap: 10px;
+  }
+
+  &__link {
+
+  }
+}

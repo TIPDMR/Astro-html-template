@@ -1,0 +1,29 @@
+<section id="consultations" class="consultations">
+    <h2 class="consultations__title heading heading_level-2 border border_top" data-aos="fade-up">Consultations</h2>
+    <div class="consultations__container ">
+        <article class="consultations__post box" data-aos="fade-right">
+            <div class="consultations__header">
+                <img class="consultations__image " data-aos-delay="100" data-aos="slide-left" src="./images/icon/star.svg" alt="Звезда"/>
+                <h3 class="consultations__post-title heading heading_level-3" data-aos-delay="200" data-aos="fade-in">Personal consultation</h3>
+            </div>
+            <p class="consultations__post-description" data-aos-delay="250" data-aos="fade-in">Eclipses are dramatic “wild cards” in our horoscopes</p>
+            {% include "../components/link-button.twig" with {'text': 'More About','link': '#','className': 'consultations__link'} %}
+        </article>
+        <article class="consultations__post box" data-aos="fade">
+            <header class="consultations__header">
+                <img class="consultations__image" src="./images/icon/moon.svg" alt="Луна"/>
+                <h3 class="consultations__post-title heading heading_level-3" data-aos-delay="200" data-aos="fade-in">Business consultation</h3>
+            </header>
+            <p class="consultations__post-description" data-aos-delay="250" data-aos="fade-in">Eclipses are dramatic “wild cards” in our horoscopes</p>
+            {% include "../components/link-button.twig" with {'text': 'More About','link': '#','className': 'consultations__link'} %}
+        </article>
+        <article class="consultations__post box" data-aos="fade-up">
+            <header class="consultations__header">
+                <img class="consultations__image" src="./images/icon/cricle.svg" alt="Солнце"/>
+                <h3 class="consultations__post-title heading heading_level-3" data-aos-delay="200" data-aos="fade-in">Family consultation</h3>
+            </header>
+            <p class="consultations__post-description" data-aos-delay="250" data-aos="fade-in">Eclipses are dramatic “wild cards” in our horoscopes</p>
+            {% include "../components/link-button.twig" with {'text': 'More About','link': '#','className': 'consultations__link'} %}
+        </article>
+    </div>
+</section>

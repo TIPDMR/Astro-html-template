@@ -1,0 +1,21 @@
+.menu-social {
+  &__list {
+    @include reset-list;
+    @include flex-container;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+  }
+
+  &__horizontal {
+    @include flex-container(column);
+  }
+}

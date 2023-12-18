@@ -1,0 +1,54 @@
+{% set posts = [
+    {
+        'image': './images/feedbacks/photo.jpg',
+        'title': 'Kate Oliver, Student1',
+        'text': '<p class="text">Eclipses are dramatic “wild cards” in our horoscopes. They are some of the most dramatic tools that the universe uses to get us to pay attention to areas in our life that need to change. They uproot us, surprise us, and get us moving.</p>
+        <p class="text">They shake us out of our feelings of complacency so that we can move from one level of maturity to another, to a higher plane, and they work very rapidly.</p>',
+    },
+    {
+        'image': './images/feedbacks/photo.jpg',
+        'title': 'Kate Oliver, Student2',
+        'text': '<p class="text">Eclipses are dramatic “wild cards” in our horoscopes. They are some of the most dramatic tools that the universe uses to get us to pay attention to areas in our life that need to change. They uproot us, surprise us, and get us moving.</p>
+        <p class="text">They shake us out of our feelings of complacency so that we can move from one level of maturity to another, to a higher plane, and they work very rapidly.</p>',
+    },
+    {
+        'image': './images/feedbacks/photo.jpg',
+        'title': 'Kate Oliver, Student3',
+        'text': '<p class="text">Eclipses are dramatic “wild cards” in our horoscopes. They are some of the most dramatic tools that the universe uses to get us to pay attention to areas in our life that need to change. They uproot us, surprise us, and get us moving.</p>
+        <p class="text">They shake us out of our feelings of complacency so that we can move from one level of maturity to another, to a higher plane, and they work very rapidly.</p>',
+    },
+] %}
+<section id="feedbacks" class="feedbacks">
+    <h2 class="feedbacks__title heading heading_level-2 box" data-aos="fade-down">Feedbacks</h2>
+    <div class="feedbacks__swiper swiper">
+        <div class="feedbacks__swiper-wrapper swiper-wrapper">
+            {% for post in posts %}
+                <article class="feedbacks__feedback swiper-slide">
+                    <div class="feedbacks__container-photo-image"
+                         data-aos="zoom-in"
+                         data-aos-delay="300"
+                         data-aos-easing="ease-in-sine">
+                        <img class="feedbacks__photo-image" src="{{ post.image }}" alt="{{ post.title }}"/>
+                    </div>
+                    <div class="feedbacks__container box"
+                         data-aos="zoom-in"
+                         data-aos-delay="300"
+                         data-aos-easing="ease-in-sine">
+                        <div class="feedbacks__texts">
+                            {{ post.text }}
+                        </div>
+                        <h3 class="feedbacks__post-title heading heading_level-3">{{ post.title }}</h3>
+                        <div class="feedbacks__buttons">
+                            <button type="button" class="feedbacks__button feedbacks__button_prev">
+                                <i class="icons icons_arrow-nav feedbacks__icon"></i>
+                            </button>
+                            <button type="button" class="feedbacks__button feedbacks__button_next">
+                                <i class="icons icons_arrow-nav feedbacks__icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>

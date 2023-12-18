@@ -1,0 +1,71 @@
+.button, .link-button {
+  @include button-main-styles;
+  @include reset-button;
+  box-sizing: border-box;
+  border: 2px solid $goldColor;
+  @include reset-link;
+  @include hover-transition ;
+  @include flex-container(row, space-between, center);
+  height: 59px;
+  text-transform: uppercase;
+  width: 250px;
+  min-width: 250px;
+
+  &:hover {
+    .icons_arrow-link {
+      background-image: url("../images/ui/arrow-link-hover.svg");
+    }
+
+    .button__text, .link-button__text {
+      color: $goldColor;
+    }
+  }
+
+  &__text {
+    @include hover-transition;
+    @include flex-container(row, center, center);
+    margin: 0;
+    box-sizing: border-box;
+    border-right: 2px solid $goldColor;
+    width: 189px;
+    height: 100%;
+  }
+
+  &__icon {
+    margin: 0 auto;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .button {
+    height: 50px;
+    width: 225px;
+    min-width: 225px;
+
+    &__text {
+      width: 165px;
+      height: 100%;
+    }
+
+    &__icon {
+      scale: 0.9;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .button {
+    width: 200px;
+    min-width: 200px;
+
+    &__text {
+      width: 160px;
+      height: 100%;
+    }
+
+    &__icon {
+      scale: 0.8;
+    }
+  }
+}

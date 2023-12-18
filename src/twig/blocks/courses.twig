@@ -1,0 +1,29 @@
+{% set posts = [
+    {
+        'title': 'Choose your lucky star',
+        'text': 'Eclipses are dramatic “wild cards” in our horoscopes',
+    },
+    {
+        'title': 'Lovely course',
+        'text': 'Eclipses are dramatic “wild cards” in our horoscopes',
+    },
+    {
+        'title': 'All about your future',
+        'text': 'Eclipses are dramatic “wild cards” in our horoscopes',
+    },
+] %}
+
+<section id="courses" class="courses">
+    <h2 class="courses__title heading heading_level-2 box" data-aos="fade-down">Courses</h2>
+    <div class="courses__container">
+        {% for post in posts %}
+            <article class="courses__post box" data-aos="zoom-in-up">
+                <header class="courses__header">
+                    <h3 class=" heading heading_level-3" data-aos-duration="700" data-aos-delay="200" data-aos="fade-in">{{ post.title }}</h3>
+                    <p class="text" data-aos-duration="700" data-aos-delay="250" data-aos="fade-in">{{ post.text }}</p>
+                </header>
+                {% include "../components/link-button.twig" with {'text': 'More About','link': '#','className': ''} %}
+            </article>
+        {% endfor %}
+    </div>
+</section>

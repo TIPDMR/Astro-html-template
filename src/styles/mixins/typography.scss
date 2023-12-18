@@ -1,0 +1,57 @@
+@import "../vars.scss";
+
+@mixin default-font-styles {
+  font-family: $fontFamily;
+  font-style: $fontStyle;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  color: $fontColor;
+  line-height: $mainLineHeight;
+}
+
+@mixin text-main-styles {
+  @include default-font-styles;
+  @include reset;
+  text-transform: uppercase;
+}
+
+@mixin button-main-styles {
+  font-family: $fontFamily;
+  font-style: $fontStyle;
+  font-weight: $mediumWeight;
+  font-size: $fontSize;
+  color: $fontColor;
+}
+
+@mixin heading-main-styles {
+  @include reset;
+  font-family: $secondaryFontFamily;
+  color: $fontColor;
+  font-style: $italicStyle;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 92.023%;
+}
+
+// Основной заголовок h1
+@mixin h1-styles {
+  @include heading-main-styles;
+  font-size: 10vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+// Заголовок второго уровня h2
+@mixin h2-styles {
+  @include heading-main-styles;
+  font-size: 68px;
+}
+
+// Заголовок третьего уровня h3
+@mixin h3-styles {
+  @include default-font-styles;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 92.023%;
+  letter-spacing: -0.78px;
+}

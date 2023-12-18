@@ -1,0 +1,11 @@
+<nav class="menu-footer">
+    <ul class="menu-footer__list" data-aos="fade-in" data-aos-delay="100">
+        {% for item in menu %}
+            <li class="menu-footer__item">
+                <a href="{{ item.link|e }}" class="menu-footer__link link">
+                    {{ item.name|e }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

@@ -1,0 +1,23 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-list {
+  @include reset;
+  list-style: none;
+}
+
+@mixin reset-button {
+  @include reset;
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+@mixin reset-link {
+  text-decoration: none;
+  color: $fontColor;
+}

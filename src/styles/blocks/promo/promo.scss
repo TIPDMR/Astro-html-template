@@ -1,0 +1,41 @@
+.promo {
+  @include default-font-styles;
+  @include flex-container(column, start, center);
+  row-gap: 20px;
+
+  &__text {
+    max-width: 536px;
+  }
+
+  &__container {
+    @include flex-container(row, space-between, center);
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .promo {
+    &__text {
+      max-width: 429px;
+    }
+
+    &__container {
+      gap: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo {
+    &__text {
+      text-align: center;
+      max-width: 536px;
+    }
+
+    &__container {
+      flex-direction: column;
+    }
+  }
+}

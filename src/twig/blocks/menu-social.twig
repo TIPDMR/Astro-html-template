@@ -1,0 +1,12 @@
+<nav class="menu-social">
+    <ul class="menu-social__list {{ horizontal }}" data-aos="fade-in" data-aos-delay="100">
+        {% for item in menuSocial %}
+            <li>
+                <a href="{{ item.link|e }}" class="link menu-social__link">
+                    {{ item.name|e }}
+                    <i class="icons icons_arrow-link  menu-social__icon"></i>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

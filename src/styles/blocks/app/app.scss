@@ -1,0 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  @include flex-container(column,);
+  max-width: $maxWidth;
+  margin: 0 auto;
+}

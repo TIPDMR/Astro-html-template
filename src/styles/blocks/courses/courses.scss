@@ -1,0 +1,62 @@
+.courses {
+  @include default-font-styles;
+  box-sizing: border-box;
+  margin-top: 100px;
+
+  &__title {
+    box-sizing: border-box;
+    border: solid $goldColor;
+    border-width: 2px 2px 1px;
+  }
+
+  &__container {
+    @include flex-container(column);
+  }
+
+  &__post {
+    @include flex-container(row, space-between);
+    gap: 20px;
+    box-sizing: border-box;
+    border: solid $goldColor;
+    border-width: 1px 2px 1px 2px;
+
+    &:last-child {
+      border-width: 1px 2px 2px 2px;
+    }
+  }
+
+  &__header {
+    @include flex-container(column);
+    row-gap: 20px;
+    max-width: 503px;
+    width: 100%;
+  }
+
+  &__post-description {
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .courses {
+    margin-top: 80px;
+
+    &__post {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .courses {
+    margin-top: 60px;
+
+    &__post {
+      flex-wrap: wrap;
+      max-height: 100%;
+    }
+
+    &__header {
+      max-width: 100%;
+    }
+  }
+}

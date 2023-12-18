@@ -1,0 +1,31 @@
+$maxWidth: 1440px;
+$minWidth: 320px;
+
+$mainLineHeight: 140%;
+
+$mainWeight: 400;
+$mediumWeight: 500;
+$boldWeight: 700;
+
+$mainStyle: normal;
+$italicStyle: italic;
+
+$mainFontSize: 16px;
+$smallFontSize: 14px;
+$mainFontSizeLinkHover: 18px;
+
+$goldColor: #D7BE8A;
+$whiteColor: #fff;
+$blackColor: #131313;
+$grayColor: #6f6f6f;
+$redColor: #ff4040;
+
+
+$fontFamily: "Inter", Arial, sans-serif;
+$secondaryFontFamily: "DMSerifDisplay", Arial, sans-serif;
+$fontColor: $whiteColor; // Цвет шрифта по умолчанию
+$fontSize: $mainFontSize; // Размер шрифта по умолчанию
+$fontWeight: $mainWeight; // Жирность шрифта по умолчанию
+$fontStyle: $mainStyle; // Начертание шрифта по умолчанию
+
+$mainBackgroundColor: #060709;

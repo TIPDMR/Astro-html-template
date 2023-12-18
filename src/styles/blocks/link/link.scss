@@ -1,0 +1,12 @@
+.link {
+  @include reset-link;
+  @include hover-transition ;
+
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+
+  &:hover {
+    color: $goldColor;
+  }
+}

@@ -1,0 +1,141 @@
+.feedbacks {
+  @include default-font-styles;
+  @include flex-container(column);
+  box-sizing: border-box;
+  margin-top: 100px;
+
+  &__title {
+    box-sizing: border-box;
+    border: solid $goldColor;
+    border-width: 2px 2px 1px 2px;
+  }
+
+  &__swiper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__swiper-wrapper {
+    display: flex;
+    position: relative;
+  }
+
+  &__feedback {
+    display: flex;
+  }
+
+  &__container-photo-image {
+    box-sizing: border-box;
+    border: solid $goldColor;
+    border-width: 1px 1px 2px 2px;
+    width: 50%;
+  }
+
+  &__photo-image {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__container {
+    @include flex-container(column);
+    box-sizing: border-box;
+    border: solid $goldColor;
+    border-width: 1px 2px 2px 1px;
+    width: 50%;
+  }
+
+  &__post-title {
+    margin: 40px 0 0;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  &__texts {
+    @include flex-container(column);
+    row-gap: 16px;
+    max-width: 507px;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  &__icon {
+    margin: 0 auto;
+  }
+
+  &__button {
+    @include reset-button;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 222;
+
+
+    &:hover {
+
+    }
+
+    &_prev {
+      border-top: 2px solid $goldColor;
+      border-bottom: 2px solid $goldColor;
+      border-left: 2px solid $goldColor;
+    }
+
+    &_next {
+      transform: rotate(180deg);
+      border: 2px solid $goldColor;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .feedbacks {
+    margin-top: 80px;
+
+    &__buttons {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .feedbacks {
+    margin-top: 60px;
+
+    &__container {
+      border-width: 1px 2px 2px 2px;
+      width: 100%;
+    }
+
+    &__container-photo-image {
+      border-width: 1px 1px 1px 2px;
+      width: 100%;
+    }
+
+    &__post-title {
+      margin: 30px 0 0;
+    }
+
+    &__feedback {
+      flex-direction: column;
+    }
+
+    &__container-photo-image {
+      height: 300px;
+    }
+
+    &__buttons {
+      margin-top: 30px;
+    }
+  }
+}
