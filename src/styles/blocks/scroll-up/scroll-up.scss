@@ -1,0 +1,40 @@
+.scroll-up {
+  position: fixed;
+  z-index: 2;
+  bottom: 45px;
+  right: 30px;
+  display: inline;
+  width: 50px;
+  height: 50px;
+  color: $goldColor;;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  background-color: $blackColor;
+  border: 1px solid $goldColor;;
+  cursor: pointer;
+}
+
+.scroll-up::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 10px solid $goldColor;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-radius: 6px;
+}
+
+.scroll-up::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  border-bottom: 10px solid $blackColor;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}

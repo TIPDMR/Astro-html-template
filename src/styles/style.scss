@@ -4,6 +4,8 @@
 @import "mixins/mixins";
 
 @import "blocks/heading/heading";
+@import "blocks/hide/hide";
+@import "blocks/show/show";
 @import "blocks/text/text";
 @import "blocks/link/link";
 @import "blocks/border/border";
@@ -11,6 +13,7 @@
 @import "blocks/button/button";
 @import "blocks/checkbox/checkbox";
 @import "blocks/button-link/button-link";
+@import "blocks/scroll-up/scroll-up";
 
 @import "blocks/body/body";
 @import "blocks/app/app";
