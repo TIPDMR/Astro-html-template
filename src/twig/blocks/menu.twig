@@ -1,12 +1,15 @@
-<nav class="header__menu menu-header">
-    <ul class="menu-header__list" data-aos="fade-in" data-aos-delay="100">
-        {% for item in menu %}
-            <li class="menu-header__item">
-                <a href="{{ item.link|e }}" class="menu-header__link">
-                    {{ item.name|e }}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
-    <button type="button" class="menu-header__button-menu-mobile icons icons_menu-mobile"></button>
-</nav>
+<div class="header">
+    <button type="button" class="button-menu-mobile icons icons_menu-mobile"></button>
+    <nav class="menu-header">
+        <ul class="menu-header__list ">
+            {% for item in menu %}
+                <li class="menu-header__item">
+                    <a href="{{ item.link|e }}" class="menu-header__link">
+                        {{ item.name|e }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+        <button type="button" class="menu-header__button-close icons icons_close"></button>
+    </nav>
+</div>

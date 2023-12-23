@@ -185,15 +185,9 @@
   }
 }
 
-@media only screen and (max-width: 1280px) {
-  .slider {
-    margin: 50px 0 0;
-  }
-}
 
 @media only screen and (max-width: 1024px) {
   .slider {
-    margin: 40px 0 0;
 
     &__image-star {
       &_sm {
@@ -213,8 +207,6 @@
 
 @media only screen and (max-width: 768px) {
   .slider {
-    margin: 20px 0 0;
-
     &__image-star {
       &_sm {
         scale: (0.6);

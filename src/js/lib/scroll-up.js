@@ -1,5 +1,3 @@
-import { throttle } from './throttle.js';
-
 export class ScrollUp {
   _lastCallTime = Date.now();
 

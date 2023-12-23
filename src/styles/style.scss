@@ -3,14 +3,15 @@
 @import "vars";
 @import "mixins/mixins";
 
-@import "blocks/heading/heading";
-@import "blocks/hide/hide";
+@import "blocks/hidden/hidden";
 @import "blocks/show/show";
+@import "blocks/heading/heading";
 @import "blocks/text/text";
 @import "blocks/link/link";
 @import "blocks/border/border";
 @import "blocks/icons/icons";
 @import "blocks/button/button";
+@import "blocks/button-menu-mobile/button-menu-mobile";
 @import "blocks/checkbox/checkbox";
 @import "blocks/button-link/button-link";
 @import "blocks/scroll-up/scroll-up";
