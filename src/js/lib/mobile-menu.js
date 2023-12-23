@@ -10,7 +10,6 @@ export class MobileMenu {
 
     this._transitionEndListener = this._transitionEndListener.bind(this);
     this._handleDocumentClick = this._handleDocumentClick.bind(this);
-    this._handleLinkClick = this._handleLinkClick.bind(this);
   }
 
   _transitionEndListener() {
@@ -39,9 +38,6 @@ export class MobileMenu {
     if (event.target === this._containerMenu) {
       this._handleToggle();
     }
-  }
-
-  _handleLinkClick(event) {
     if (event.target.classList.contains('menu-header__link')) {
       document.querySelector(event.target.hash).scrollIntoView({
         behavior: 'smooth',
@@ -53,9 +49,8 @@ export class MobileMenu {
   setEventListeners() {
     this._containerButtonOpen.addEventListener('click', this._handleToggle);
     this._containerButtonClose.addEventListener('click', this._handleToggle);
-    document.addEventListener('keydown', this._handleEscClose);
     this._containerMenu.addEventListener('transitionend', this._transitionEndListener);
     document.addEventListener('mousedown', this._handleDocumentClick);
-    document.addEventListener('mousedown', this._handleLinkClick);
+    document.addEventListener('keydown', this._handleEscClose);
   }
 }
