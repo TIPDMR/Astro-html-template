@@ -113,6 +113,7 @@
 
     &__button-close {
       @include reset-button;
+      margin: 20px 0;
       display: block;
     }
 
